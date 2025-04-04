@@ -3,7 +3,7 @@ import { BtnLink } from "../shared/BtnLink";
 import { Container } from "../shared/Container";
 import { NavItem } from "../shared/NavItem";
 
-const navItems = [
+export const navItems = [
   { href: "#", text: "Home" },
   { href: "#services", text: "Services" },
   { href: "#about-us", text: "About Us" },
@@ -46,7 +46,8 @@ export const Navbar = () => {
           <div className="min-w-max flex items-center gap-x-3">
             <button
               onClick={toggleTheme}
-              className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer">
+              className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer"
+            >
               {theme === "dark" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +55,8 @@ export const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -68,7 +70,8 @@ export const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6">
+                  className="w-6 h-6"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
